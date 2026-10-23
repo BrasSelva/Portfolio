@@ -3,8 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pictur'Art — Brassica Selvaratnam</title>
+  <title>Pictur'Art | Brassica Selvaratnam</title>
   <meta name="description" content="Pictur'Art, application web de partage et de sauvegarde de photos entre amis en React, Node.js / Express et MongoDB.">
+  <link rel="canonical" href="https://brasselva.github.io/Portfolio/picturart.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://brasselva.github.io/Portfolio/picturart.html">
+  <meta property="og:title" content="Pictur'Art | Brassica Selvaratnam">
+  <meta property="og:description" content="Pictur'Art, application web de partage et de sauvegarde de photos entre amis en React, Node.js / Express et MongoDB.">
+  <meta property="og:image" content="https://brasselva.github.io/Portfolio/assets/img/PictureArt/Connexion.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="assets/img/favicon.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,9 +21,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body>
+<body id="top">
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-<header id="top">
+<header>
   <div class="container nav">
     <a href="index.html" class="logo">Brassica<span>.</span></a>
     <nav>
@@ -26,6 +36,8 @@
         <li><a href="index.html#projets">Projets</a></li>
         <li><a href="index.html#competences">Compétences</a></li>
         <li><a href="index.html#formation">Formation</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
         <li><a href="index.html#contact">Contact</a></li>
         <li class="theme-li">
           <button class="icon-btn" id="themeBtn" aria-label="Changer de thème">
@@ -38,38 +50,56 @@
   </div>
 </header>
 
-<main>
+<main id="contenu">
   <section class="page-head">
     <div class="container">
       <a class="back" href="index.html#projets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m0 0 6-6m-6 6 6 6"/></svg>Retour aux projets</a>
-      <p class="eyebrow">// projet · application web</p>
+      <p class="eyebrow">// projet technique · Master 1 · 2025</p>
       <h1>Pictur'Art</h1>
-      <p class="lead">Une application web pour sauvegarder ses photos et les partager entre amis, dans des albums privés. Vos souvenirs restent entre de bonnes mains : les vôtres.</p>
+      <p class="lead">Une application web pour partager photos et vidéos en petit comité, dans des albums privés : entre amis, en famille ou avec son club, sans passer par les réseaux sociaux.</p>
     </div>
   </section>
 
   <section class="detail">
     <div class="container detail-grid">
       <div class="prose">
+        <h2>Le projet</h2>
+        <p>Projet technique de Master 1, mené en équipe de quatre. J'ai travaillé sur toutes les couches : l'interface React, l'API Node.js / Express et la base MongoDB. Nous avons d'abord écrit le cahier des charges et les maquettes Figma en juin 2025, puis développé l'application pendant une semaine intensive, en juillet 2025.</p>
+        <p>Avant de coder, nous avons vérifié le besoin avec un sondage auprès de 15 personnes. 80 % trouvaient l'application utile, et toutes jugeaient la confidentialité des albums importante.</p>
+
         <h2>Fonctionnalités</h2>
         <ul>
-          <li>Inscription et connexion à un compte personnel.</li>
-          <li>Création d'albums privés pour regrouper ses photos.</li>
-          <li>Recherche et filtres sur les albums : par date, par créateur et par nom d'album.</li>
-          <li>Navigation simple entre ses albums et son profil.</li>
+          <li>Inscription, connexion et mot de passe oublié, avec un jeton JWT.</li>
+          <li>Albums privés que l'on crée ou que l'on rejoint, et invitation d'amis par e-mail.</li>
+          <li>Ajout de photos et de vidéos, et visionneuse pour parcourir un album.</li>
+          <li>Commentaires et réactions emoji, une seule réaction par personne et par média.</li>
+          <li>Recherche et filtres sur les albums : par date, par créateur et par nom.</li>
         </ul>
         <div class="gallery">
-          <figure><a href="assets/img/PictureArt/Connexion.png"><img src="assets/img/PictureArt/Connexion.png" alt="Écran de connexion de Pictur'Art"></a><figcaption>L'écran de connexion</figcaption></figure>
-          <figure><a href="assets/img/PictureArt/Mes%20album.png"><img src="assets/img/PictureArt/Mes%20album.png" alt="Page Mes albums avec recherche et filtres"></a><figcaption>La page « Mes albums », avec recherche et filtres</figcaption></figure>
+          <figure><a href="assets/img/PictureArt/Connexion.png"><img src="assets/img/PictureArt/Connexion.png" alt="Maquette Figma de l'écran de connexion de Pictur'Art"></a><figcaption>Maquette Figma : l'écran de connexion</figcaption></figure>
+          <figure><a href="assets/img/PictureArt/Mes%20album.png"><img src="assets/img/PictureArt/Mes%20album.png" alt="Maquette Figma de la page Mes albums"></a><figcaption>Maquette Figma : la page « Mes albums »</figcaption></figure>
         </div>
         <h2>Architecture</h2>
-        <p>Une application JavaScript de bout en bout : une interface en <strong>React</strong>, une API REST en <strong>Node.js / Express</strong>, et une base <strong>MongoDB</strong> pour les utilisateurs, les albums et les photos.</p>
+        <p>Une application JavaScript de bout en bout : une interface en <strong>React</strong>, une API REST en <strong>Node.js / Express</strong> et une base <strong>MongoDB</strong>.</p>
+        <ul>
+          <li><strong>API :</strong> un contrôleur par domaine (authentification, groupes, albums, médias, réactions), et un middleware qui vérifie le jeton sur les routes protégées.</li>
+          <li><strong>Upload :</strong> les fichiers passent par multer, qui filtre le type et la taille. Seul l'auteur d'un média peut le supprimer.</li>
+          <li><strong>Mobile :</strong> l'interface est responsive et installable comme une application, grâce à un manifest et un service worker (PWA).</li>
+          <li><strong>Déploiement :</strong> les services tournent dans des conteneurs Docker Compose, sur un VPS.</li>
+        </ul>
+
+        <h2>Conception</h2>
+        <p>Nous avons modélisé les données (MCD, MLD, MPD), écrit les user stories avec leur définition de « terminé », et planifié le projet avec un diagramme de Gantt et un tableau Trello. Le cahier des charges couvre aussi le RGPD : données minimales, mots de passe hachés, droit à l'effacement et aucun cookie de suivi.</p>
       </div>
       <aside class="card info">
         <dl>
-          <div><dt>Type</dt><dd>Application web</dd></div>
-          <div><dt>Stack</dt><dd class="tags"><span class="tag">React</span><span class="tag">Node.js / Express</span><span class="tag">MongoDB</span></dd></div>
+          <div><dt>Contexte</dt><dd>Projet technique · Master 1, H3 Hitema</dd></div>
+          <div><dt>Équipe</dt><dd>4 personnes</dd></div>
+          <div><dt>Mon rôle</dt><dd>Développeuse full-stack : front, back et base de données</dd></div>
+          <div><dt>Période</dt><dd>Juin - Juil. 2025</dd></div>
+          <div><dt>Stack</dt><dd class="tags"><span class="tag">React</span><span class="tag">Node.js / Express</span><span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">Docker</span><span class="tag">PWA</span><span class="tag">Figma</span><span class="tag">Trello</span></dd></div>
         </dl>
+        <a class="btn primary" href="https://github.com/BrasSelva/Pictur-Art" target="_blank" rel="noopener">Voir le code sur GitHub</a>
       </aside>
     </div>
   </section>

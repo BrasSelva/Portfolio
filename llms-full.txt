@@ -1,0 +1,128 @@
+# Brassica Selvaratnam, développeuse .NET / full-stack
+
+> Développeuse .NET / full-stack (C#, .NET, Blazor, PostgreSQL, Azure DevOps). Master en informatique (H3 Hitema, 2026) après deux ans d'alternance à la DSI du Groupe AFNOR. En recherche d'un CDI en Île-de-France, disponible dès maintenant.
+
+Site : https://brasselva.github.io/Portfolio/
+Contact : brassica.selvaratnam@gmail.com
+LinkedIn : https://www.linkedin.com/in/brassica-selvaratnam-2a7051211
+GitHub : https://github.com/BrasSelva
+CV (PDF) : https://brasselva.github.io/Portfolio/assets/img/CV_Brassica_Selvaratnam2026.pdf
+
+## Recherche
+
+- Poste recherché : CDI de développeuse .NET / full-stack
+- Localisation : Paris et petite couronne, ouverte au télétravail partiel
+- Disponibilité : immédiate
+
+## Parcours professionnel
+
+### Développeuse .NET en alternance · Groupe AFNOR, DSI · La Plaine Saint-Denis (93) · Sept. 2024 - Sept. 2026
+
+- Refonte complète du référentiel applicatif interne : cartographie des applications et du métier.
+- Développement de nouvelles fonctionnalités sur des applications web internes en Blazor / C# (création et édition d'entités métier imbriquées, formulaires, services génériques).
+- Mise en place de sondes et d'indicateurs de pilotage du parc applicatif.
+- Visualisation de données métier sous forme de diagrammes générés dynamiquement (Mermaid) et résolution de bugs de rendu côté front.
+- Respect des standards qualité de l'équipe : analyse SonarQube, revues de code, workflow Git collaboratif.
+- Intégration et déploiement continus via Azure DevOps, base de données PostgreSQL.
+
+Stack : C#, .NET 9, Blazor, Entity Framework (Code First), LINQ, PostgreSQL, Bootstrap 5, Azure DevOps, SonarQube, NuGet, Git
+
+Détail des missions (équipe agile de 4 personnes, pôle Architecture, portail interne de la DSI) :
+1. Refonte de la supervision des sondes applicatives : vue par pôle colorée selon l'état des sondes (vert, orange, rouge, gris), navigation pôle → applications → sondes, règles d'agrégation par enum et LINQ, export Excel, graphique en camembert, tests unitaires. L'équipe DevOps a remplacé ses captures d'écran quotidiennes par cette page.
+2. Cartographie des capacités métier conçue de A à Z : MCD (produit métier → groupes de capacités → capacités), tables de traduction pour anticiper la migration des serveurs vers Linux, Code First avec Entity Framework sur PostgreSQL, architecture en oignon (Core / Infrastructure), jeux de données de test, interface avec mode édition.
+3. Maintenance et évolutions du portail, puis transmission du référentiel applicatif à l'alternant suivant.
+
+### Développeuse full-stack en stage alterné · Transtec International · Choisy-le-Roi · Janv. - Juil. 2024
+
+Plateforme de gestion de tickets SAV pour un réparateur d'électroménager (autocuiseurs, micro-ondes), qui remplace un suivi des réparations sous Excel. Équipe de 3 personnes : un chef de projet / référent technique et deux stagiaires en développement. Rythme alterné : 1 semaine d'école, 3 semaines en entreprise.
+
+Missions (5 tickets GitLab, livrés par merge requests relues) :
+1. Mise en place de Flyway : comparaison avec Liquibase, configuration Maven et Spring Boot, identifiants en variables d'environnement, versionnement du schéma complet pour la production.
+2. Correction d'un bug de formulaire dans l'annuaire des entreprises : vérification manquante d'une entité nulle.
+3. Filtre des tickets par plage de dates : datepicker Angular, paramètres OffsetDateTime au format ISO dans le contrôleur Spring, requête JPQL tolérante aux dates vides (COALESCE).
+4. Pagination de l'annuaire : mat-paginator côté Angular, findAll(Pageable) de Spring Data JPA et endpoint de comptage.
+5. Tests unitaires avec JUnit et Mockito sur la création et la mise à jour d'une entreprise.
+
+Stack : Java, Spring Boot, Spring Data JPA, Angular 16, PostgreSQL, Flyway, JUnit, Mockito, GitLab
+
+### Stagiaire développement base de données · Transtec International · Choisy-le-Roi · Janv. - Févr. 2023
+
+- Conception d'un MCD et d'une base de données pour automatiser la facturation (clients, factures, lignes).
+- Réalisation d'une application de facturation sous Access, en équipe.
+
+Stack : MCD / Merise, SQL, Access
+
+### Stagiaire web & e-commerce · TomKids · Aubervilliers · Juin - Juil. 2022
+
+- Création de pages de marque sur Amazon pour des licences comme Disney, Lee Cooper et NASA : storytelling, mise en valeur des produits, contenus de qualité.
+- Intégration des produits en ligne et utilisation avancée d'Excel pour la gestion des fiches produits.
+
+## Projets
+
+### Mutation 2035 : serious game sur l'IA · Projet de fin d'études, Master · 2026
+
+Jeu sérieux de sensibilisation à l'intelligence artificielle, réalisé en équipe pour un client (KPMG) dans le cadre d'une startup fictive. Personne dans l'équipe n'avait encore utilisé de moteur de jeu : l'équipe a choisi Godot pour se mettre au défi.
+
+- Le joueur choisit un profil (Ingénieur, Artiste ou Consultant) et enchaîne des missions sous contrainte de temps.
+- Chaque choix fait évoluer deux scores : le noyau humain et la synergie avec l'IA.
+- Scénarios modélisés comme un graphe de nœuds et d'options en base, pour ajouter du contenu sans toucher au code.
+- Sauvegarde des parties et de l'historique des choix dans Supabase (PostgreSQL).
+- Build et publication sur itch.io automatisés avec GitHub Actions.
+
+Rôle : Tech Lead et développeuse back-end : architecture, base de données, CI/CD, coordination technique.
+Stack : Godot 4, GDScript, Supabase, PostgreSQL, GitHub Actions, itch.io
+
+### GustoPredict · Hackathon, 1 journée
+
+Tableau de bord de prévision des stocks pour un distributeur alimentaire B2B : génération de données, moteur de prévision par moyenne mobile, et modèle financier (ROI, CAPEX/OPEX) présenté au jury.
+
+Stack : Python, Streamlit
+
+### SicilyLines · BTS SIO · 2023
+
+Application de bureau pour une compagnie maritime : ajout, modification et suppression des traversées et de leur durée, connectée à une base de données SQL.
+
+Stack : C#, WinForms, SQL
+Code : https://github.com/BrasSelva/Application-ScilyLines-C-
+
+### Pictur'Art
+
+Projet technique de Master 1 (H3 Hitema), en équipe de 4 : cahier des charges et maquettes Figma en juin 2025, développement en juillet 2025. Application de partage de photos et vidéos dans des albums privés : authentification JWT, invitations par e-mail, upload filtré (multer), commentaires et réactions emoji, recherche et filtres. Besoin validé par un sondage auprès de 15 personnes. Conception MCD / MLD / MPD, user stories, Gantt, Trello, prise en compte du RGPD.
+
+Rôle : développeuse full-stack (front React, API Node.js / Express, base MongoDB).
+Stack : React, Node.js / Express, MongoDB, JWT, Docker Compose, PWA
+Code : https://github.com/BrasSelva/Pictur-Art
+
+### Site de vente de bonbons · BTS SIO
+
+CRUD des produits avec authentification pour les actions d'administration.
+
+Stack : PHP, MySQL
+
+## Compétences
+
+- Back-end : C#, .NET, Blazor (au quotidien) ; Java, Spring Boot, Node.js / Express, PHP, Python, C / C++
+- Front-end : HTML / CSS, JavaScript (au quotidien) ; React, Angular, Vue.js
+- Données : PostgreSQL (au quotidien) ; SQL, MongoDB, Supabase, Merise / MCD
+- DevOps et qualité : Azure DevOps, Git, SonarQube (au quotidien) ; GitHub Actions, GitLab, CI/CD, JUnit / Mockito, Flyway
+- Méthodes : Scrum / Agile, revues de code, Trello, travail en équipe
+- Sécurité : ANSSI SecNumAcadémie, authentification, bonnes pratiques OWASP
+
+## Formation
+
+- 2024 - 2026 : Master en informatique, H3 Hitema, en alternance chez Groupe AFNOR
+- 2023 - 2024 : Bachelor Informatique, H3 Hitema
+- 2021 - 2023 : BTS SIO option SLAM (Solutions Logicielles et Applications Métiers), Lycée polyvalent de Cachan
+- 2020 : Baccalauréat scientifique, Lycée Guillaume Apollinaire (94)
+
+Certifications : Pix, ANSSI SecNumAcadémie (sensibilisation à la cybersécurité)
+Langues : français, anglais (B2), tamoul
+
+## Veille technologique
+
+- Cybersécurité dans l'espace : vulnérabilités des satellites (brouillage, usurpation, failles, mises à jour) et protections (chiffrement, authentification, détection d'intrusion).
+- Reconnaissance faciale : apports pour la sécurité face aux risques pour la vie privée, les libertés individuelles et l'égalité.
+
+## Centres d'intérêt
+
+Randonnée (treks dans le Vercors et les Dolomites), voyage et photo, escalade en falaise, théâtre (3 ans de pratique), jeux vidéo.

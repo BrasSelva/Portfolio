@@ -1,0 +1,31 @@
+# Brassica Selvaratnam, développeuse .NET / full-stack
+
+> Portfolio de Brassica Selvaratnam, développeuse .NET / full-stack (C#, .NET, Blazor, PostgreSQL, Azure DevOps), diplômée d'un Master en informatique (H3 Hitema) après deux ans d'alternance à la DSI du Groupe AFNOR. En recherche d'un CDI en Île-de-France, disponible dès maintenant.
+
+Le site est en français. Pour la version complète en un seul fichier (parcours, projets, compétences, formation), voir [llms-full.txt](https://brasselva.github.io/Portfolio/llms-full.txt).
+
+## Profil
+
+- [Accueil du portfolio](https://brasselva.github.io/Portfolio/): présentation, parcours professionnel, projets, compétences, formation, centres d'intérêt et contact
+- [CV (PDF)](https://brasselva.github.io/Portfolio/assets/img/CV_Brassica_Selvaratnam2026.pdf): CV à jour pour un CDI
+- [LinkedIn](https://www.linkedin.com/in/brassica-selvaratnam-2a7051211): profil professionnel
+- [GitHub](https://github.com/BrasSelva): code source des projets
+
+## Expériences
+
+- [Alternance au Groupe AFNOR (2024 - 2026)](https://brasselva.github.io/Portfolio/afnor.html): DSI, pôle Architecture : refonte de la supervision des sondes applicatives et cartographie des capacités métier en C#, Blazor, Entity Framework et PostgreSQL
+- [Plateforme de tickets SAV chez Transtec International (2024)](https://brasselva.github.io/Portfolio/tickets.html): stage alterné full-stack en Spring Boot, Angular et PostgreSQL : Flyway, filtre par dates, pagination, tests JUnit / Mockito
+- [Facturation automatisée chez Transtec International (2023)](https://brasselva.github.io/Portfolio/facturation.html): MCD, base de données et application Access de facturation
+- [Pages de marque Amazon chez TomKids (2022)](https://brasselva.github.io/Portfolio/amazon.html): pages marketing Amazon pour Disney, Lee Cooper et NASA
+
+## Projets
+
+- [Mutation 2035 (2026)](https://brasselva.github.io/Portfolio/mutation2035.html): serious game sur l'IA en Godot pour KPMG, projet de fin d'études ; rôle de Tech Lead et développeuse back-end (Supabase, PostgreSQL, GitHub Actions)
+- [SicilyLines (2023)](https://brasselva.github.io/Portfolio/traversee.html): application de bureau C# / WinForms de gestion des traversées d'une compagnie maritime
+- [Pictur'Art](https://brasselva.github.io/Portfolio/picturart.html): projet technique de Master 1 en équipe de 4 (2025), rôle de développeuse full-stack : albums photo et vidéo privés, commentaires et réactions (React, Node.js / Express, MongoDB, JWT, Docker, PWA)
+- [Site de vente de bonbons](https://brasselva.github.io/Portfolio/bonbon.html): CRUD produits avec authentification (PHP, MySQL)
+
+## Optional
+
+- [Veille : cybersécurité dans l'espace](https://brasselva.github.io/Portfolio/cybersecurite.html): les vulnérabilités des satellites et leur protection
+- [Veille : reconnaissance faciale](https://brasselva.github.io/Portfolio/ia.html): sécurité et protection de la vie privée

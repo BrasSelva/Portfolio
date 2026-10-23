@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alternance Groupe AFNOR | Brassica Selvaratnam</title>
+  <meta name="description" content="Deux ans d'alternance à la DSI du Groupe AFNOR : refonte de la supervision des sondes applicatives et cartographie des capacités métier en C#, Blazor et PostgreSQL.">
+  <link rel="canonical" href="https://brasselva.github.io/Portfolio/afnor.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://brasselva.github.io/Portfolio/afnor.html">
+  <meta property="og:title" content="Alternance Groupe AFNOR | Brassica Selvaratnam">
+  <meta property="og:description" content="Deux ans d'alternance à la DSI du Groupe AFNOR : refonte de la supervision des sondes applicatives et cartographie des capacités métier en C#, Blazor et PostgreSQL.">
+  <meta property="og:image" content="https://brasselva.github.io/Portfolio/assets/img/photo2026.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body id="top">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">Brassica<span>.</span></a>
+    <nav>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="menu">
+        <li><a href="index.html#experience">Expérience</a></li>
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a href="index.html#formation">Formation</a></li>
+        <li><a href="index.html#apropos">À propos</a></li>
+        <li><a href="index.html#veille">Veille</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="theme-li">
+          <button class="icon-btn" id="themeBtn" aria-label="Changer de thème">
+            <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+  <section class="page-head">
+    <div class="container">
+      <a class="back" href="index.html#experience"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m0 0 6-6m-6 6 6 6"/></svg>Retour au parcours</a>
+      <p class="eyebrow">// alternance · Groupe AFNOR · 2024 - 2026</p>
+      <h1>Des indicateurs que les équipes utilisent vraiment</h1>
+      <p class="lead">Deux ans à la DSI du Groupe AFNOR, au pôle Architecture, sur le portail interne qui centralise le référentiel applicatif. Mon fil rouge : transformer des données techniques en outils clairs pour les équipes.</p>
+    </div>
+  </section>
+
+  <section class="detail">
+    <div class="container detail-grid">
+      <div class="prose">
+        <h2>Le contexte</h2>
+        <p>J'ai rejoint une équipe agile de quatre personnes : un architecte logiciel, qui était mon tuteur, un Scrum Master, un autre alternant et moi. Le portail sert à toute la DSI : référentiel des applications, dossiers d'architecture, planning de présence des équipes. Je m'occupais principalement de la partie <strong>supervision</strong>.</p>
+
+        <h2>1. Refonte de la supervision des sondes applicatives</h2>
+        <p>Les sondes qui surveillent l'état des applications existaient déjà, mais leur affichage était difficile à lire. Chaque matin, l'équipe DevOps faisait une capture d'écran de l'ancienne page pour partager l'état du SI.</p>
+        <p>Je me suis inspirée des tableaux de bord de statut de Microsoft 365 pour concevoir une vue lisible d'un coup d'œil. Chaque case représente un pôle et prend une couleur selon l'état de ses sondes. Un clic affiche ses applications, puis leurs sondes.</p>
+
+        <div class="status-demo" aria-label="Illustration d'un tableau de supervision, données fictives">
+          <div class="status-grid">
+            <div class="s ok"><b>Pôle A</b><span>12 sondes</span></div>
+            <div class="s ok"><b>Pôle B</b><span>8 sondes</span></div>
+            <div class="s warn"><b>Pôle C</b><span>1 en erreur</span></div>
+            <div class="s ok"><b>Pôle D</b><span>15 sondes</span></div>
+            <div class="s ok"><b>Pôle E</b><span>6 sondes</span></div>
+            <div class="s ko"><b>Pôle F</b><span>toutes en erreur</span></div>
+            <div class="s ok"><b>Pôle G</b><span>9 sondes</span></div>
+            <div class="s off"><b>Pôle H</b><span>sans sonde</span></div>
+          </div>
+          <p class="status-legend"><span class="ok">Tout fonctionne</span><span class="warn">Au moins une sonde en erreur</span><span class="ko">Toutes en erreur</span><span class="off">Non supervisé</span></p>
+          <p class="status-note">Illustration recréée pour le portfolio, avec des données fictives.</p>
+        </div>
+
+        <ul>
+          <li>Des méthodes de service qui récupèrent les pôles, les applications et les sondes, puis les assemblent dans une grille de données exportable vers Excel.</li>
+          <li>Des règles d'agrégation : si une sonde d'une application tombe, la case passe à l'orange, et si toutes tombent, elle passe au rouge. Elles sont écrites avec un <code>enum</code> d'états et des requêtes <strong>LINQ</strong>.</li>
+          <li>Un graphique en camembert qui montre la répartition des sondes par état.</li>
+          <li>Des tests unitaires sur toutes les méthodes avant de passer au front, une pratique que j'ai apprise avec mon tuteur.</li>
+        </ul>
+        <p><strong>Résultat :</strong> l'équipe DevOps a abandonné les captures d'écran. Cette page est devenue sa référence quotidienne pour suivre l'état des sondes.</p>
+
+        <h2>2. Cartographie des capacités métier, de A à Z</h2>
+        <p>L'architecte du pôle voulait un outil pour visualiser et tenir à jour la cartographie des capacités métier de l'entreprise. Il fallait tout construire : base de données, logique métier et interface.</p>
+        <ul>
+          <li><strong>Conception :</strong> j'ai écrit un MCD à partir de la cartographie existante. Un produit métier contient des groupes de capacités, et chaque groupe contient des capacités.</li>
+          <li><strong>Anticiper la migration vers Linux :</strong> pour éviter les problèmes de culture (langue et localisation) sur les nouveaux serveurs, chaque entité a sa table de traduction. On passe donc de trois à six tables, avec une entité traduisible commune.</li>
+          <li><strong>Implémentation :</strong> modèle en Code First avec Entity Framework sur PostgreSQL. Entités, repositories et services sont répartis entre les couches Core et Infrastructure d'une architecture en oignon.</li>
+          <li><strong>Fiabilité :</strong> j'ai créé des jeux de données réalistes pour tester les relations entre entités et les méthodes de récupération.</li>
+          <li><strong>Interface :</strong> un tableau structuré par produit, groupe et capacité, avec un mode édition pour ajouter, modifier et supprimer des éléments.</li>
+        </ul>
+
+        <h2>3. Maintenance et transmission</h2>
+        <p>J'ai aussi assuré la maintenance du portail : corrections, nouvelles fonctionnalités et suivi des déploiements. En troisième année, j'ai transmis le référentiel applicatif à l'alternant qui reprenait ce sujet.</p>
+
+        <h2>Ma façon de travailler</h2>
+        <ul>
+          <li>Chaque mission est une <strong>user story Azure DevOps</strong>. Elle passe par trois environnements : développement, recette par le métier, puis mise en production validée par l'équipe Ops.</li>
+          <li>Daily chaque matin, revues de code et analyse <strong>SonarQube</strong>.</li>
+          <li>Je réutilise les composants du framework interne, distribués en packages NuGet, plutôt que de réinventer la roue.</li>
+        </ul>
+
+        <h2>Ce que j'en retiens</h2>
+        <p>Un indicateur ne vaut que s'il est compris et utilisé. J'ai appris à partir du besoin réel des utilisateurs, à concevoir avant de coder, et à tester avant de livrer.</p>
+      </div>
+      <aside class="card info">
+        <dl>
+          <div><dt>Contrat</dt><dd>Alternance, Master en informatique</dd></div>
+          <div><dt>Entreprise</dt><dd>Groupe AFNOR · DSI, pôle Architecture · La Plaine Saint-Denis</dd></div>
+          <div><dt>Période</dt><dd>Sept. 2024 - Sept. 2026</dd></div>
+          <div><dt>Équipe</dt><dd>4 personnes, méthode agile</dd></div>
+          <div><dt>Stack</dt><dd class="tags"><span class="tag">C#</span><span class="tag">.NET 9</span><span class="tag">Blazor</span><span class="tag">Entity Framework</span><span class="tag">LINQ</span><span class="tag">PostgreSQL</span><span class="tag">Bootstrap 5</span><span class="tag">Azure DevOps</span><span class="tag">SonarQube</span><span class="tag">NuGet</span></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© <span id="year">2026</span> Brassica Selvaratnam</span>
+    <a href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

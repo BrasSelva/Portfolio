@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable | Brassica Selvaratnam</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/Portfolio/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/Portfolio/assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Portfolio/assets/css/site.css">
+  <style>
+    .lost { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 40px 20px; position: relative; overflow: hidden; }
+    .lost h1 { font-size: clamp(4rem, 16vw, 8rem); line-height: 1; letter-spacing: -.05em; color: var(--accent); }
+    .lost p { color: var(--muted); max-width: 440px; margin: 14px auto 28px; }
+    .lost .hero-actions { justify-content: center; }
+    .lost::before { content: ""; position: absolute; inset: -20%; background: var(--accent); opacity: .08; -webkit-mask: var(--topo) center / 900px no-repeat; mask: var(--topo) center / 900px no-repeat; animation: drift 120s linear infinite; pointer-events: none; }
+    .lost > div { position: relative; }
+  </style>
+</head>
+<body>
+  <main class="lost">
+    <div>
+      <p class="eyebrow">// erreur 404</p>
+      <h1>Hors sentier</h1>
+      <p>Cette page n'existe pas, ou elle a changé de place. Pas de panique, le chemin du retour est balisé.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="/Portfolio/">Retour à l'accueil</a>
+        <a class="btn" href="/Portfolio/#projets">Voir mes projets</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
