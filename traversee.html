@@ -1,154 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Portfolio
-  * Template URL: https://bootstrapmade.com/Portfolio-bootstrap-portfolio-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SicilyLines — Brassica Selvaratnam</title>
+  <meta name="description" content="SicilyLines, application de bureau C# de gestion des traversées d'une compagnie maritime.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-            <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-            <li><a class="nav-link scrollto" href="index.html">About</a></li>
-            <li><a class="nav-link scrollto " href="index.html">Mes projets</a></li>
-            <li><a class="nav-link scrollto " href="index.html">Veille technologique</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <h2 class="hero-title mb-4">ScilyLines</h2>
-          <ol class="breadcrumb d-flex justify-content-center">
-            <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="breadcrumb-item active">ScilyLines</li>
-          </ol>
-        </div>
-      </div>
-    </div>
+<header id="top">
+  <div class="container nav">
+    <a href="index.html" class="logo">Brassica<span>.</span></a>
+    <nav>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="menu">
+        <li><a href="index.html#experience">Expérience</a></li>
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a href="index.html#formation">Formation</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="theme-li">
+          <button class="icon-btn" id="themeBtn" aria-label="Changer de thème">
+            <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <main id="main">
-
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="assets/img/bateau.jpg" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Information</h3>
-              <ul>
-                <li><strong>Category</strong>: Developpeur</li>
-                <li><strong>Date du projet</strong>: 2023</li>
-                <li><strong>Github</strong>: <a href="#">https://github.com/BrasSelva/Application-ScilyLines-C-</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Description</h2>
-              <p>
-                Application C#, réalisant une interface graphique sur lequel on peut ajouter modifier ou supprimer les traversées, plus la durée de la traversée.</p>
-                SicilyLines est une compagnie maritime privée, la plus grande entreprise du secteur du transport rapide de passagers. Une compagnie qui est composée de plus de 600 personnes. Grâce à cette équipe, cette compagnie accueille plus d’un million et demi de passagers chaque année. Ils ont un site internet, notamment pour la réservation en ligne à partir d’une base de données. Sur ce site, les internautes vont avoir accès à la consultation des liaisons, des tarifs, des horaires des traversées et la réservation en ligne.
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Details Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
+<main>
+  <section class="page-head">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Portfolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Portfolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <a class="back" href="index.html#projets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m0 0 6-6m-6 6 6 6"/></svg>Retour aux projets</a>
+      <p class="eyebrow">// projet · BTS SIO · 2023</p>
+      <h1>SicilyLines</h1>
+      <p class="lead">Application de bureau en C# pour gérer les traversées d'une compagnie maritime : ajout, modification et suppression des traversées et de leur durée.</p>
     </div>
-  </footer><!-- End  Footer -->
+  </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <section class="detail">
+    <div class="container detail-grid">
+      <div class="prose">
+        <img class="cover" src="assets/img/bateau.jpg" alt="Navire de la compagnie SicilyLines">
+        <h2>Contexte</h2>
+        <p>SicilyLines est une compagnie maritime privée de transport rapide de passagers : plus de 600 salariés et plus d'un million et demi de passagers par an. Son site permet aux internautes de consulter les liaisons, les tarifs et les horaires, et de réserver en ligne à partir d'une base de données.</p>
+        <h2>Ce que j'ai réalisé</h2>
+        <ul>
+          <li>Une interface graphique WinForms pour gérer les traversées sans passer directement par la base de données.</li>
+          <li>Les opérations d'ajout, de modification et de suppression d'une traversée, avec sa durée.</li>
+          <li>La connexion à la base de données SQL de la compagnie.</li>
+        </ul>
+      </div>
+      <aside class="card info">
+        <dl>
+          <div><dt>Contexte</dt><dd>Projet de BTS SIO</dd></div>
+          <div><dt>Année</dt><dd>2023</dd></div>
+          <div><dt>Stack</dt><dd class="tags"><span class="tag">C#</span><span class="tag">WinForms</span><span class="tag">SQL</span></dd></div>
+        </dl>
+        <a class="btn primary" href="https://github.com/BrasSelva/Application-ScilyLines-C-" target="_blank" rel="noopener">Voir le code sur GitHub</a>
+      </aside>
+    </div>
+  </section>
+</main>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<footer>
+  <div class="container">
+    <span>© <span id="year">2026</span> Brassica Selvaratnam</span>
+    <a href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<script src="assets/js/site.js"></script>
 </body>
-
 </html>

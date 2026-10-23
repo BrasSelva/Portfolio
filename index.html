@@ -1,371 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Bootstrap Portfolio Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Portfolio
-  * Template URL: https://bootstrapmade.com/Portfolio-bootstrap-portfolio-html-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brassica Selvaratnam — Développeuse .NET</title>
+  <meta name="description" content="Brassica Selvaratnam, développeuse .NET / full-stack (C#, Blazor, PostgreSQL, Azure DevOps). 2 ans d'alternance chez Groupe AFNOR. Disponible pour un CDI en Île-de-France.">
+  <meta name="author" content="Brassica Selvaratnam">
+  <meta property="og:title" content="Brassica Selvaratnam — Développeuse .NET">
+  <meta property="og:description" content="C#, .NET, Blazor, PostgreSQL, Azure DevOps. Disponible pour un CDI en Île-de-France.">
+  <meta property="og:image" content="https://brasselva.github.io/Portfolio/assets/img/photo.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+<header id="top">
+  <div class="container nav">
+    <a href="#" class="logo">Brassica<span>.</span></a>
+    <nav>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="menu">
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li class="theme-li">
+          <button class="icon-btn" id="themeBtn" aria-label="Changer de thème">
+            <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#work">Mes projets</a></li>
-          <li><a class="nav-link scrollto " href="#blog">Veille technologique</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/photo.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Je suis Brassica Selvaratnam</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Développeuse, Développeuse web"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge"><span class="dot"></span>Disponible pour un CDI · Île-de-France</div>
+        <h1>Brassica Selvaratnam<span class="role">Développeuse .NET</span></h1>
+        <p class="intro">Je conçois et fais évoluer des applications web métier en <strong>C#</strong>, <strong>.NET</strong> et <strong>Blazor</strong>. Deux ans d'alternance au sein de la DSI du Groupe AFNOR, et un Master en informatique.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:brassica.selvaratnam@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Me contacter</a>
+          <a class="btn" href="assets/img/CVBrassicaSelvaratnamCDI.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Télécharger mon CV</a>
+          <a class="btn" href="https://github.com/BrasSelva" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+        </div>
+        <div class="stats">
+          <div class="stat"><b>2 ans</b><span>d'alternance .NET</span></div>
+          <div class="stat"><b>Bac+5</b><span>Master en informatique</span></div>
+          <div class="stat"><b>B2</b><span>Anglais professionnel</span></div>
         </div>
       </div>
-    </div>
-  </div><!-- End Hero Section -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/photo.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Brassica Selvaratnam</span></p>
-                        <p><span class="title-s">Profile: </span> <span>développeuse web</span></p>
-                        <p><span class="title-s">Email: </span> <span>brassica.selvaratnam@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>0768963796</span></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-mf">
-                    <p class="title-s">
-                      <br>
-                      Allez explorer mon Curriculum vitae, vous en serez plus sur les compétences que j'ai acquises via mes formations ainsi que mes expériences professionnelles. <a style="color:#FF0000" href="assets/img/AlternanceM1.pdf">"Mon CV"</a>
-                    </p>              
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        A propos de moi
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      
-                      Bienvenue dans mon Portfolio !
-                      <br>
-                      Ce site présente un aperçu de qui je suis, mettant en lumière : <br>                
-                      - Mon parcours professionnel et scolaire. <br> - Vous découvrirez également mes centres d'intérêt.
-                      <br>- Mes projets et stages réalisés lors de mes formations.
-                     <br>- Mes activités de veille technologique. <br>
-                     <br> Pour ce qui est de ma formation, j'ai obtenu un baccalauréat scientifique avec l'option SVT. Ensuite, j'ai entamé une licence de physique en première année. Par la suite, je me suis réorienté vers un BTS SIO (Services Informatiques aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers). 
-                     Actuellement, je poursuis mes études avec un Bachelor en développement. Je prévois de poursuivre avec un Master en développement web à h3hitema pour la rentrée septembre 2024. Je suis donc actuellement à la recherche d'une <a style="color:#FF0000">Alternance.</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="portrait">
+        <img src="assets/img/photo.jpg" alt="Portrait de Brassica Selvaratnam" width="1185" height="985">
       </div>
-    </section><!-- End About Section -->
+    </div>
+  </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Mes projets
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/banane.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/banane.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Site bonbon</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Gestion d'ajout, de modification et de supression des produits (PHP,HTML,CSS).</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="bonbon.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/panasonicc.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/panasonicc.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Stage de 1ère année de BTS </h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">L'Utilisation de l'outil Access, afin d'effectuer une facturation automatique.</span>
-                      
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="facturation.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/amazon.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/amazon.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Stage de 2 ème année</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Gestion Marketing.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="amazon.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/bat.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/bat.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Projet ScilyLines en C#</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Application C#, on peut ajouter modifier ou supprimer les traversées, plus la durée de la traversée.</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="traversee.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="portfolio-details.html"> <span class="bi bi-plus-circle"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
-                </div> -->
-              <!-- </a> -->
-    <!-- ======= Testimonials Section ======= -->
-
-    <section id="blog" class="blog-mf sect-pt4 route">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Veilles technologiques
-              </h3>
-              <div class="line-mf"></div>
-              <br>
-              <p>L’atout principal de la veille technologique est d’identifier ou d’anticiper des innovations par secteurs d’activité. Mettre en place une veille technologique répond à plusieurs objectifs, la surveillance, la collecte, le partage et la diffusion d’information permettant d’anticiper ou de s’informer sur des changements, développement, concepts, innovation, etc….
-              </p>
-            </div>
-           
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="cybersecurite.html"><img src="assets/img/Elon1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category"> Developpeur</h6>        
-                  </div>
-                </div>
-                
-                <h3 class="card-title"><a href="cybersecurite.html">Cybersécurité dans l'espace : quels sont les défis ?
-                </a></h3>
-                <p class="card-description">              
-                La cybersécurité dans l'espace est devenue un sujet de plus en plus important en raison de la croissance rapide des activités spatiales et de la dépendance croissante à l'égard des systèmes satellitaires pour les communications, la navigation, l'observation de la Terre, et bien plus encore. 
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="ia.html"><img src="assets/img/smartphone.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Developpeur</h6>
-                  </div>
-                </div>
-                <h4 class="card-title"><a href="ia.html">La reconnaissance faciale peut-elle être utilisée de manière à améliorer la sécurité, tout en garantissant la protection de la vie privée?
-                </a></h4>
-                <p class="card-description">
-                  La reconnaissance faciale peut être utilisée pour améliorer la sécurité dans de nombreux contextes, tels que le contrôle d'accès physique à des installations sécurisées, la vérification d'identité en ligne, la détection de crimes et la surveillance des espaces publics. Cependant, il est crucial de garantir simultanément la protection de la vie privée des individus.
-                </p>
-              </div>
-            </div>
-          </div>
-    </section><!-- End Blog Section -->
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="alt">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>Portfolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Portfolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
+      <p class="eyebrow">// expérience</p>
+      <h2>Parcours professionnel</h2>
+      <p class="lead">Des stages de BTS jusqu'à deux années d'alternance en DSI, sur des applications utilisées au quotidien par les équipes internes.</p>
+
+      <div class="timeline">
+        <article class="card job reveal">
+          <div class="when">Sept. 2024 — Sept. 2026</div>
+          <div>
+            <h3>Développeuse .NET — Alternance</h3>
+            <div class="where">Groupe AFNOR · DSI · La Plaine Saint-Denis (93)</div>
+            <ul>
+              <li>Refonte complète du référentiel applicatif interne : cartographie des applications et du métier.</li>
+              <li>Développement de nouvelles fonctionnalités sur des applications web internes en <strong>Blazor / C#</strong> (création et édition d'entités métier imbriquées, formulaires, services génériques).</li>
+              <li>Mise en place de sondes et d'indicateurs de pilotage du parc applicatif.</li>
+              <li>Visualisation de données métier sous forme de diagrammes générés dynamiquement (Mermaid) et résolution de bugs de rendu côté front.</li>
+              <li>Respect des standards qualité de l'équipe : analyse <strong>SonarQube</strong>, revues de code, workflow Git collaboratif.</li>
+              <li>Intégration et déploiement continus via <strong>Azure DevOps</strong>, base de données <strong>PostgreSQL</strong>.</li>
+            </ul>
+            <div class="tags"><span class="tag">C#</span><span class="tag">.NET</span><span class="tag">Blazor</span><span class="tag">PostgreSQL</span><span class="tag">Azure DevOps</span><span class="tag">SonarQube</span><span class="tag">Git</span></div>
           </div>
+        </article>
+
+        <article class="card job reveal">
+          <div class="when">Janv. — Juil. 2024</div>
+          <div>
+            <h3>Développeuse full-stack — Stage alterné</h3>
+            <div class="where">Transtec International · Choisy-le-Roi</div>
+            <ul>
+              <li>Plateforme de gestion de tickets SAV pour un réparateur d'électroménager, en <strong>Spring Boot</strong> et <strong>Angular</strong>, pour remplacer un suivi sous Excel.</li>
+              <li>Mise en place de <strong>Flyway</strong> pour versionner les migrations de la base PostgreSQL.</li>
+              <li>Filtre des tickets par plage de dates, du datepicker Angular jusqu'à la requête JPQL, et pagination avec Spring Data JPA.</li>
+              <li>Correction de bugs et premiers tests unitaires avec <strong>JUnit</strong> et <strong>Mockito</strong>, livrés par merge requests relues sur GitLab.</li>
+            </ul>
+            <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Angular</span><span class="tag">PostgreSQL</span><span class="tag">Flyway</span><span class="tag">JUnit</span><span class="tag">GitLab</span></div>
+            <p style="margin:12px 0 0;font-size:.9rem;font-weight:600"><a href="tickets.html">Voir les missions en détail →</a></p>
+          </div>
+        </article>
+
+        <article class="card job reveal">
+          <div class="when">Janv. — Févr. 2023</div>
+          <div>
+            <h3>Stagiaire développement base de données</h3>
+            <div class="where">Transtec International · Choisy-le-Roi</div>
+            <ul>
+              <li>Conception d'un MCD et d'une base de données pour automatiser la facturation (clients, factures, lignes).</li>
+              <li>Réalisation d'une application de facturation sous Access, en équipe.</li>
+            </ul>
+            <div class="tags"><span class="tag">MCD / Merise</span><span class="tag">SQL</span><span class="tag">Access</span></div>
+            <p style="margin:12px 0 0;font-size:.9rem;font-weight:600"><a href="facturation.html">Voir les réalisations →</a></p>
+          </div>
+        </article>
+
+        <article class="card job reveal">
+          <div class="when">Juin — Juil. 2022</div>
+          <div>
+            <h3>Stagiaire web &amp; e-commerce</h3>
+            <div class="where">TomKids · Aubervilliers</div>
+            <ul>
+              <li>Création de pages de marque sur Amazon pour des licences comme Disney, Lee Cooper et NASA : storytelling, mise en valeur des produits, contenus de qualité.</li>
+              <li>Intégration des produits en ligne et utilisation avancée d'Excel pour la gestion des fiches produits.</li>
+            </ul>
+            <div class="tags"><span class="tag">E-commerce</span><span class="tag">Excel</span><span class="tag">Contenu web</span></div>
+            <p style="margin:12px 0 0;font-size:.9rem;font-weight:600"><a href="amazon.html">Voir les réalisations →</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projets">
+    <div class="container">
+      <p class="eyebrow">// projets</p>
+      <h2>Projets sélectionnés</h2>
+      <p class="lead">Projets d'école, de hackathon et personnels, du back-end à la mise en production.</p>
+
+      <div class="projects">
+        <article class="card project featured has-shot reveal">
+          <div class="body">
+            <div class="kind">Projet de fin d'études · Master · 2026</div>
+            <h3>Mutation 2035 — serious game sur l'IA</h3>
+            <p>Jeu sérieux de sensibilisation à l'intelligence artificielle, réalisé en équipe pour un client (KPMG) dans le cadre d'une startup fictive. Personne dans l'équipe n'avait encore utilisé de moteur de jeu : nous avons choisi <strong>Godot</strong> pour nous mettre au défi, et appris GDScript pendant le projet.</p>
+            <p>Scénarios modélisés comme un graphe de nœuds et de choix en base, pour ajouter du contenu sans toucher au code. Sauvegarde et progression des joueurs dans Supabase. Build et publication sur itch.io automatisés à chaque version.</p>
+            <p class="role"><strong>Mon rôle :</strong> Tech Lead &amp; développeuse back-end — architecture, base de données, CI/CD, coordination technique de l'équipe.</p>
+            <div class="tags"><span class="tag">Godot 4</span><span class="tag">GDScript</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">GitHub Actions</span><span class="tag">itch.io</span></div>
+            <div class="links"><a href="mutation2035.html">Voir le projet en détail →</a></div>
+          </div>
+          <a class="shot" href="mutation2035.html"><img src="assets/img/Godot/accueil.jpg" alt="Écran d'accueil de Mutation 2035 : choix du profil Ingénieur, Artiste ou Consultant" loading="lazy"></a>
+        </article>
+
+        <article class="card project reveal">
+          <div class="kind">Hackathon · 1 journée</div>
+          <h3>GustoPredict</h3>
+          <p>Tableau de bord de prévision des stocks pour un distributeur alimentaire B2B : génération de données, moteur de prévision par moyenne mobile, et modèle financier (ROI, CAPEX/OPEX) présenté au jury.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Data</span></div>
+        </article>
+
+        <article class="card project reveal">
+          <div class="kind">BTS SIO · 2023</div>
+          <h3>SicilyLines</h3>
+          <p>Application de bureau pour une compagnie maritime : ajout, modification et suppression des traversées et de leur durée, connectée à une base de données.</p>
+          <div class="tags"><span class="tag">C#</span><span class="tag">WinForms</span><span class="tag">SQL</span></div>
+          <div class="links"><a href="https://github.com/BrasSelva/Application-ScilyLines-C-" target="_blank" rel="noopener">Code source →</a><a href="traversee.html">Détails →</a></div>
+        </article>
+      </div>
+
+      <p class="subhead">Autres réalisations</p>
+      <div class="small-projects">
+        <div class="card reveal">
+          <h4>Site de vente de bonbons</h4>
+          <p>CRUD produits avec authentification.</p>
+          <div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+          <p style="margin:10px 0 0"><a href="bonbon.html">Voir →</a></p>
+        </div>
+        <div class="card reveal">
+          <h4>Pictur'Art</h4>
+          <p>Application de partage et de sauvegarde de photos entre amis.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Node.js / Express</span><span class="tag">MongoDB</span></div>
+          <p style="margin:10px 0 0"><a href="picturart.html">Voir →</a></p>
+        </div>
+        <div class="card reveal">
+          <h4>Facturation automatisée</h4>
+          <p>Modèle de données et application Access (stage).</p>
+          <div class="tags"><span class="tag">Access</span><span class="tag">SQL</span></div>
+          <p style="margin:10px 0 0"><a href="facturation.html">Voir →</a></p>
+        </div>
+        <div class="card reveal">
+          <h4>Ce portfolio</h4>
+          <p>Site statique responsive, thème clair/sombre, sans framework.</p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+          <p style="margin:10px 0 0"><a href="https://github.com/BrasSelva/Portfolio" target="_blank" rel="noopener">Code →</a></p>
         </div>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- SKILLS -->
+  <section id="competences" class="alt">
+    <div class="container">
+      <p class="eyebrow">// compétences</p>
+      <h2>Stack technique</h2>
+      <p class="lead">Spécialisée dans l'écosystème .NET, avec une base solide en front-end et en bases de données. Les éléments en couleur pleine sont ceux que j'utilise au quotidien.</p>
+      <div class="skills">
+        <div class="card reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>Back-end</h3>
+          <div class="tags"><span class="tag core">C#</span><span class="tag core">.NET</span><span class="tag core">Blazor</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Node.js / Express</span><span class="tag">PHP</span><span class="tag">Python</span><span class="tag">C / C++</span></div>
+        </div>
+        <div class="card reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg>Front-end</h3>
+          <div class="tags"><span class="tag core">HTML / CSS</span><span class="tag core">JavaScript</span><span class="tag">React</span><span class="tag">Angular</span><span class="tag">Vue.js</span></div>
+        </div>
+        <div class="card reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>Données</h3>
+          <div class="tags"><span class="tag core">PostgreSQL</span><span class="tag">SQL</span><span class="tag">MongoDB</span><span class="tag">Supabase</span><span class="tag">Merise / MCD</span></div>
+        </div>
+        <div class="card reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg>DevOps &amp; qualité</h3>
+          <div class="tags"><span class="tag core">Azure DevOps</span><span class="tag core">Git</span><span class="tag core">SonarQube</span><span class="tag">GitHub Actions</span><span class="tag">GitLab</span><span class="tag">CI/CD</span><span class="tag">JUnit / Mockito</span><span class="tag">Flyway</span></div>
+        </div>
+        <div class="card reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M16 4a3 3 0 0 1 0 6M21 20c0-2.6-1.6-4.8-4-5.6"/></svg>Méthodes</h3>
+          <div class="tags"><span class="tag">Scrum / Agile</span><span class="tag">Revues de code</span><span class="tag">Trello</span><span class="tag">Travail en équipe</span></div>
+        </div>
+        <div class="card reveal">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3 4 6v6c0 4.4 3.4 8.3 8 9 4.6-.7 8-4.6 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>Sécurité</h3>
+          <div class="tags"><span class="tag">ANSSI SecNumAcadémie</span><span class="tag">Authentification</span><span class="tag">Bonnes pratiques OWASP</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <!-- EDUCATION -->
+  <section id="formation">
+    <div class="container">
+      <p class="eyebrow">// formation</p>
+      <h2>Formation &amp; certifications</h2>
+      <div class="edu-grid" style="margin-top:32px">
+        <div class="card reveal">
+          <ul class="edu">
+            <li><div class="y">2024 — 2026</div><div><b>Master en informatique</b><span>H3 Hitema · en alternance chez Groupe AFNOR</span></div></li>
+            <li><div class="y">2023 — 2024</div><div><b>Bachelor Informatique</b><span>H3 Hitema</span></div></li>
+            <li><div class="y">2021 — 2023</div><div><b>BTS SIO option SLAM</b><span>Solutions Logicielles et Applications Métiers · Lycée polyvalent de Cachan</span></div></li>
+            <li><div class="y">2020</div><div><b>Baccalauréat scientifique</b><span>Lycée Guillaume Apollinaire (94)</span></div></li>
+          </ul>
+        </div>
+        <div class="card facts reveal">
+          <h3>Certifications</h3>
+          <p>Pix · ANSSI SecNumAcadémie (sensibilisation à la cybersécurité)</p>
+          <h3>Langues</h3>
+          <p>Français · Anglais B2 · Tamoul</p>
+          <h3>Mobilité</h3>
+          <p>Paris et petite couronne · ouverte au télétravail partiel</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- ABOUT -->
+  <section id="apropos" class="alt">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="eyebrow">// à propos</p>
+        <h2>Un peu plus sur moi</h2>
+        <p>Après un Bac S, j'ai découvert le développement en BTS SIO et je n'ai plus lâché le code. Mon alternance chez AFNOR m'a appris à travailler sur une base de code partagée, avec des exigences de qualité réelles et des utilisateurs qui comptent sur l'outil au quotidien.</p>
+        <p>Ce qui me plaît : comprendre un besoin métier, le traduire en un modèle de données propre, et livrer une interface simple à utiliser. Je cherche aujourd'hui un <strong>premier CDI</strong> dans une équipe où je pourrai continuer à progresser sur .NET et l'architecture applicative.</p>
+      </div>
+      <div class="interests">
+        <div class="card interest reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m3 20 6-10 4 6 3-4 5 8z"/></svg></div><div><b>Randonnée</b><span>Treks dans le Vercors et les Dolomites</span></div></div>
+        <div class="card interest reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></div><div><b>Voyage</b><span>Paysages et photo</span></div></div>
+        <div class="card interest reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="5" r="1.5"/><circle cx="15" cy="9" r="1.5"/><circle cx="10" cy="14" r="1.5"/><circle cx="16" cy="18" r="1.5"/><path d="M8 6.5 10 12.5M15 10.5 10 12.5M11 15l4 2"/></svg></div><div><b>Escalade</b><span>En falaise</span></div></div>
+        <div class="card interest reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h10v6a5 5 0 0 1-10 0z"/><path d="M14 8h6v6a5 5 0 0 1-7 4.6"/><path d="M7 8h.01M11 8h.01M7.5 12.5c.8.7 1.7.7 2.5 0"/></svg></div><div><b>Théâtre</b><span>3 ans de pratique</span></div></div>
+        <div class="card interest reveal"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="7" width="20" height="11" rx="4"/><path d="M7 11v3M5.5 12.5h3M15 12h.01M18 13h.01"/></svg></div><div><b>Jeux vidéo</b><span>Joueuse passionnée</span></div></div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="subhead">Quelques souvenirs de rando</p>
+      <div class="mosaic reveal">
+        <a class="zoom big" href="assets/img/voyage/web/vercors.jpg"><img src="assets/img/voyage/web/vercors.jpg" alt="Assise au sommet face aux falaises du Vercors" loading="lazy"><span>Vercors</span></a>
+        <a class="zoom tall" href="assets/img/voyage/web/escalade.jpg"><img src="assets/img/voyage/web/escalade.jpg" alt="Session d'escalade en falaise, assurage au pied de la voie" loading="lazy"><span>Escalade en falaise</span></a>
+        <a class="zoom tall" href="assets/img/voyage/web/dolomite.jpg"><img src="assets/img/voyage/web/dolomite.jpg" alt="Assise sur un rocher face aux sommets des Dolomites" loading="lazy" style="object-position:50% 80%"><span>Dolomites</span></a>
+        <a class="zoom" href="assets/img/voyage/web/aigle.jpg"><img src="assets/img/voyage/web/aigle.jpg" alt="Un rapace survole les plateaux du Vercors depuis un sommet" loading="lazy" style="object-position:50% 70%"><span>Vercors</span></a>
+        <a class="zoom" href="assets/img/voyage/web/merdenuage.jpg"><img src="assets/img/voyage/web/merdenuage.jpg" alt="Mer de nuages sous les crêtes" loading="lazy"><span>Mer de nuages</span></a>
+        <a class="zoom wide" href="assets/img/voyage/web/dolomite2.jpg"><img src="assets/img/voyage/web/dolomite2.jpg" alt="Sommets des Dolomites à l'heure bleue" loading="lazy" style="object-position:50% 75%"><span>Dolomites, à l'heure bleue</span></a>
+      </div>
+    </div>
+  </section>
 
+  <!-- VEILLE -->
+  <section id="veille">
+    <div class="container">
+      <p class="eyebrow">// veille technologique</p>
+      <h2>Veille</h2>
+      <p class="lead">Des sujets que j'ai approfondis à l'intersection du développement, de la sécurité et de la vie privée.</p>
+      <div class="veille">
+        <article class="card reveal">
+          <div class="tags"><span class="tag">Cybersécurité</span></div>
+          <h3>Cybersécurité dans l'espace : quels défis ?</h3>
+          <p>Avec l'essor des constellations de satellites, les infrastructures spatiales deviennent une cible : communications, navigation, observation de la Terre.</p>
+          <a href="cybersecurite.html">Lire →</a>
+        </article>
+        <article class="card reveal">
+          <div class="tags"><span class="tag">Vie privée</span></div>
+          <h3>Reconnaissance faciale : sécurité vs vie privée</h3>
+          <p>Contrôle d'accès, vérification d'identité, surveillance : comment concilier les usages sécuritaires et la protection des données personnelles ?</p>
+          <a href="ia.html">Lire →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="alt contact">
+    <div class="container reveal">
+      <p class="eyebrow">// contact</p>
+      <h2>Travaillons ensemble</h2>
+      <p class="lead">Je suis disponible immédiatement pour un CDI de développeuse .NET en Île-de-France. N'hésitez pas à m'écrire, je réponds rapidement.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:brassica.selvaratnam@gmail.com">brassica.selvaratnam@gmail.com</a>
+        <a class="btn" href="https://github.com/BrasSelva" target="_blank" rel="noopener">github.com/BrasSelva</a>
+        <a class="btn" href="assets/img/CVBrassicaSelvaratnamCDI.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© <span id="year">2026</span> Brassica Selvaratnam</span>
+    <a href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
 </body>
-
 </html>

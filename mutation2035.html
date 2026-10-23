@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mutation 2035 — Brassica Selvaratnam</title>
+  <meta name="description" content="Mutation 2035, serious game de sensibilisation à l'IA réalisé avec Godot pour KPMG : projet de fin d'études de Master.">
+  <meta property="og:image" content="https://brasselva.github.io/Portfolio/assets/img/Godot/accueil.jpg">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<header id="top">
+  <div class="container nav">
+    <a href="index.html" class="logo">Brassica<span>.</span></a>
+    <nav>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <ul id="menu">
+        <li><a href="index.html#experience">Expérience</a></li>
+        <li><a href="index.html#projets">Projets</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a href="index.html#formation">Formation</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li class="theme-li">
+          <button class="icon-btn" id="themeBtn" aria-label="Changer de thème">
+            <svg id="iconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg id="iconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-head">
+    <div class="container">
+      <a class="back" href="index.html#projets"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M19 12H5m0 0 6-6m-6 6 6 6"/></svg>Retour aux projets</a>
+      <p class="eyebrow">// projet de fin d'études · Master · 2026</p>
+      <h1>Mutation 2035</h1>
+      <p class="lead">Un serious game pour sensibiliser à l'intelligence artificielle : le joueur se projette en 2035 dans un métier transformé par l'IA, et doit apprendre à s'en servir sans perdre ce qui fait sa valeur humaine.</p>
+    </div>
+  </section>
+
+  <section class="detail">
+    <div class="container detail-grid">
+      <div class="prose">
+        <a class="zoom" href="assets/img/Godot/accueil.jpg"><img class="cover" src="assets/img/Godot/accueil.jpg" alt="Écran d'accueil : choix du profil Ingénieur, Artiste ou Consultant"></a>
+
+        <h2>Le projet</h2>
+        <p>Réalisé en équipe pour un client, KPMG, dans le cadre d'une startup fictive montée pour le projet de fin d'études. Personne dans l'équipe n'avait encore utilisé de moteur de jeu : nous avons choisi <strong>Godot</strong> pour nous mettre au défi, et appris GDScript pendant le projet.</p>
+
+        <h2>Le principe du jeu</h2>
+        <ul>
+          <li>Le joueur choisit un profil, <strong>Ingénieur</strong>, <strong>Artiste</strong> ou <strong>Consultant</strong>, qui détermine son scénario.</li>
+          <li>Chaque scénario est une suite de missions sous contrainte. Par exemple, créer en 4 heures l'affiche d'un festival de néo-jazz.</li>
+          <li>Produire uniquement avec l'IA ne suffit pas : le client rejette un résultat « beau mais vide ». Il faut débloquer des compétences humaines, comme la direction artistique, pour réussir.</li>
+          <li>Chaque choix fait évoluer deux scores, le <strong>noyau humain</strong> et la <strong>synergie avec l'IA</strong>, qui déterminent la fin de partie.</li>
+        </ul>
+
+        <div class="gallery">
+          <figure><a href="assets/img/Godot/mission.jpg"><img src="assets/img/Godot/mission.jpg" alt="Mission : créer l'affiche du festival Néo-Jazz 2035 en 4 heures"></a><figcaption>Une mission sous contrainte de temps</figcaption></figure>
+          <figure><a href="assets/img/Godot/arbre.jpg"><img src="assets/img/Godot/arbre.jpg" alt="Arbre de compétences hybride IA / humain avec une question à choix"></a><figcaption>L'arbre de compétences hybride IA / humain</figcaption></figure>
+        </div>
+
+        <h2>Le modèle de données</h2>
+        <p>J'ai conçu la base de données qui porte les scénarios et la progression des joueurs. Un scénario est un graphe : chaque <em>nœud</em> propose des <em>options</em>, et chaque option pointe vers le nœud suivant et modifie les deux scores. Ajouter du contenu revient donc à ajouter des lignes, sans toucher au code du jeu.</p>
+        <a class="zoom" href="assets/img/Godot/MCD.png"><img class="diagram" src="assets/img/Godot/MCD.png" alt="MCD : Users, Persona, Scenario, Nodes, Options, Game_Sessions, Session_Choice"></a>
+        <p>Chaque partie est enregistrée (<code>Game_Sessions</code>) avec l'historique de tous les choix du joueur (<code>Session_Choice</code>), pour reprendre une partie et analyser les parcours.</p>
+
+        <h2>Mon rôle : Tech Lead &amp; back-end</h2>
+        <ul>
+          <li>Choix de l'architecture et coordination technique de l'équipe.</li>
+          <li>Conception de la base de données et intégration de <strong>Supabase</strong> (PostgreSQL) pour la sauvegarde et la progression.</li>
+          <li>Scénarios chargés depuis des fichiers JSON, pour que l'équipe puisse écrire du contenu sans toucher au code.</li>
+          <li>Pipeline <strong>GitHub Actions</strong> qui construit le jeu et le publie sur itch.io à chaque version.</li>
+        </ul>
+      </div>
+      <aside class="card info">
+        <dl>
+          <div><dt>Contexte</dt><dd>Projet de fin d'études · Master</dd></div>
+          <div><dt>Client</dt><dd>KPMG</dd></div>
+          <div><dt>Année</dt><dd>2026</dd></div>
+          <div><dt>Mon rôle</dt><dd>Tech Lead &amp; développeuse back-end</dd></div>
+          <div><dt>Stack</dt><dd class="tags"><span class="tag">Godot 4</span><span class="tag">GDScript</span><span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">GitHub Actions</span><span class="tag">itch.io</span></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>© <span id="year">2026</span> Brassica Selvaratnam</span>
+    <a href="#top">Retour en haut ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
